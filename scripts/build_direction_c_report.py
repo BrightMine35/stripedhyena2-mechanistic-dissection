@@ -650,6 +650,10 @@ def build_pdf(M: dict, fig_dir: Path, out_pdf: Path):
   ol.refs li {{
     margin-bottom: 1.5px;
   }}
+  ol.refs a {{
+    color: #1D4ED8;
+    text-decoration: none;
+  }}
   .page-break {{
     break-before: page;
     page-break-before: always;
@@ -741,7 +745,7 @@ def build_pdf(M: dict, fig_dir: Path, out_pdf: Path):
 
 <ol class="refs">
   <li>Brixi G, Durrant MG, Ku J, et al. Genome modelling and design across all domains of life with Evo 2. <em>Nature</em>. 2026 Apr;652(8112):1349&ndash;1361. doi:10.1038/s41586-026-10176-5. PMID:41781614.</li>
-  <li>Ding X, Qin Z. Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication. <em>arXiv:2610.39415</em>. 2026 Oct.</li>
+  <li>Ding X, Qin Z. Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication. <a href="https://arxiv.org/abs/2610.39415">arXiv:2610.39415</a> (2026 Oct). Code: <a href="https://github.com/astding/mmaemu">github.com/astding/mmaemu</a>.</li>
   <li>Findlay GM, Daza RM, Martin B, et al. Accurate classification of BRCA1 variants with saturation genome editing. <em>Nature</em>. 2018 Oct;562(7726):217&ndash;222. doi:10.1038/s41586-018-0461-z. PMID:30209399.</li>
   <li>Avsec &#381;, Latysheva N, Cheng J, et al. Advancing regulatory variant effect prediction with AlphaGenome. <em>Nature</em>. 2026 Jan;649(8099):1206&ndash;1218. doi:10.1038/s41586-025-10014-0. PMID:41606153.</li>
   <li>Lorenz R, Bernhart SH, H&ouml;ner zu Siederdissen C, et al. ViennaRNA Package 2.0. <em>Algorithms for Molecular Biology</em>. 2011 Nov 24;6:26. doi:10.1186/1748-7188-6-26. PMID:22115189.</li>
@@ -1167,7 +1171,7 @@ def build_docx(M: dict, fig_dir: Path, out_docx: Path):
     _add_h1(doc, '6. Verified References & Data Manifest')
     refs = [
         'Brixi G, Durrant MG, Ku J, et al. Genome modelling and design across all domains of life with Evo 2. Nature. 2026 Apr;652(8112):1349-1361. PMID:41781614.',
-        'Ding X, Qin Z. Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication. arXiv:2610.39415. 2026 Oct.',
+        'Ding X, Qin Z. Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication. https://arxiv.org/abs/2610.39415 (2026 Oct). Code: https://github.com/astding/mmaemu.',
         'Findlay GM, Daza RM, Martin B, et al. Accurate classification of BRCA1 variants with saturation genome editing. Nature. 2018 Oct;562(7726):217-222. PMID:30209399.',
         'Avsec Z, Latysheva N, Cheng J, et al. Advancing regulatory variant effect prediction with AlphaGenome. Nature. 2026 Jan;649(8099):1206-1218. PMID:41606153.',
         'Lorenz R, Bernhart SH, Honer zu Siederdissen C, et al. ViennaRNA Package 2.0. Algorithms for Molecular Biology. 2011 Nov 24;6:26. PMID:22115189.',
@@ -1270,7 +1274,7 @@ def build_markdown(M: dict, out_md: Path):
         '## 5. References',
         '',
         '1. Brixi G et al. *Nature* 2026;652(8112):1349–1361. PMID:41781614.',
-        '2. Ding X, Qin Z. *arXiv:2610.39415*. 2026.',
+        '2. Ding X, Qin Z. Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication. [arXiv:2610.39415](https://arxiv.org/abs/2610.39415) (2026 Oct). Code: [github.com/astding/mmaemu](https://github.com/astding/mmaemu).',
         '3. Findlay GM et al. *Nature* 2018;562(7726):217–222. PMID:30209399.',
         '4. Avsec Ž et al. *Nature* 2026;649(8099):1206–1218. PMID:41606153.',
         '5. Lorenz R et al. *Algorithms Mol Biol* 2011;6:26. PMID:22115189.',

@@ -55,4 +55,4 @@ shasum -a 256 -c SHA256SUMS.txt
 
 ## Acknowledgments & Citations
 
-See [`CONTRIBUTORS.md`](CONTRIBUTORS.md) and [`docs/report.pdf`](docs/report.pdf) for complete attribution and verified primary literature references (Brixi et al., *Nature* 2026; Ding & Qin, *arXiv:2610.39415* 2026; Findlay et al., *Nature* 2018; Avsec et al., *Nature* 2026; Lorenz et al., *Algorithms Mol Biol* 2011; Rao et al., *ICLR* 2021; Andrews et al., *Nature Genetics* 1999; Landrum et al., *Nucleic Acids Res* 2025).
+See [`CONTRIBUTORS.md`](CONTRIBUTORS.md) and [`docs/report.pdf`](docs/report.pdf) for complete attribution and verified primary literature references (Brixi et al., *Nature* 2026; Ding & Qin, [arXiv:2610.39415](https://arxiv.org/abs/2610.39415) 2026 / [mmaemu](https://github.com/astding/mmaemu); Findlay et al., *Nature* 2018; Avsec et al., *Nature* 2026; Lorenz et al., *Algorithms Mol Biol* 2011; Rao et al., *ICLR* 2021; Andrews et al., *Nature Genetics* 1999; Landrum et al., *Nucleic Acids Res* 2025).
